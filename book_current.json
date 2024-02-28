@@ -1,0 +1,19 @@
+{
+  "title": "iOS逆向：心得集锦",
+  "description": "把iOS逆向中的，各种不适合、不方便、不应该放到某个其他独立子教程中的心得，都整理过来，放到此处iOS逆向心得集锦中，方便参考",
+  "pluginsConfig": {
+    "github-buttons": {
+      "buttons": [
+        {
+          "repo": "ios_re_experience_collection"
+        }
+      ]
+    },
+    "sitemap-general": {
+      "prefix": "https://book.crifan.org/books/ios_re_experience_collection/website/"
+    },
+    "toolbar-button": {
+      "url": "https://book.crifan.org/books/ios_re_experience_collection/pdf/ios_re_experience_collection.pdf"
+    }
+  }
+}
