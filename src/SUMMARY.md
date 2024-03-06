@@ -2,6 +2,7 @@
 
 * [前言](README.md)
 * [iOS逆向心得概述](experience_summary/README.md)
+  * [总体对策](experience_summary/overall_strategy.md)
 * [iPhone](iphone/README.md)
   * [初始化开发环境](iphone/init_dev_env.md)
   * [常用目录](iphone/common_folder.md)

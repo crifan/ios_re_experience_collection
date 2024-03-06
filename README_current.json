@@ -1,6 +1,6 @@
 {
-  "latestVersion": "v0.5",
-  "lastUpdate": "20240228",
+  "latestVersion": "v0.5.5",
+  "lastUpdate": "20240305",
   "gitRepoName": "ios_re_experience_collection",
   "bookName": "iOS逆向：心得集锦",
   "bookDescription": "把iOS逆向中的，各种不适合、不方便、不应该放到某个其他独立子教程中的心得，都整理过来，放到此处iOS逆向心得集锦中，方便参考"
