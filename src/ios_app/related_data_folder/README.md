@@ -2,10 +2,7 @@
 
 TODO:
 
-* 【整理】iOS逆向心得：app完全卸载后仍有可能有app相关的数据
-* 【整理】iOS逆向心得：Keychain数据库
 * 【未解决】iOS逆向WhatsApp：调试IdentityKeypairData调用SecItemAdd写入Keychain数据库的具体逻辑
-* 【整理】iOS逆向：Keychain数据库字段含义
 
 ---
 
