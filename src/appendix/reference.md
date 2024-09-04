@@ -30,4 +30,16 @@
 * 【已解决】iOS逆向：lldb中获取ObjC中dict中key的值
 * 【未解决】iOS逆向WhatsApp：-[WARegistrationURLBuilder initWithPhoneNumber:language:locale:fbUUID:waUUID:chatPrivateKey:e2eKeyBundle:smbClientSignedVNameCertData:]
 * 【未解决】iOS逆向WhatsApp：用watchpoint监视寻找WASignalKeyStore的_registrationIdData值来源
+* 【整理】iOS逆向Xcode调试心得：查看当前所有变量值
+* 【整理】Xcode调试心得：调试触发断点时Fetching Variables on iPhone
+* 【已解决】从XCode崩溃的地址寻找所属二进制的代码段和函数位置
+* 【整理】Xcode调试心得：给汇编代码窗口保持打开状态不关闭
+* 【无需解决】Xcode的目标调试iOS设备出现2个：一个是arm64一个是arm64e
+* 【整理】iOS逆向心得：iOS的ObjC的属性内部有可能是有额外生成属性值的处理逻辑的
+* 【规避解决】Xcode调试iOSOpenDev的xm文件无法定位到源代码位置
+* 【未解决】iOS逆向调试iOSOpenDev的Logos插件时%orig触发断点时无法正常打开并定位到xm源码位置
+* 【未解决】iOS逆向WhatsApp：研究v2/reg_onboard_abprop的参数值cc、in、rc的来源和逻辑
+* 【已解决】iOS逆向：获取iOS的app的主二进制文件路径
+* 【整理】Xcode去Attach挂载调试app或二进制：通过PID或进程名
+* 【整理】iOS调试心得：崩溃日志解析工具
 * 
