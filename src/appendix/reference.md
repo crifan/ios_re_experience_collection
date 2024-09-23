@@ -26,7 +26,6 @@
 * 【未解决】iOS逆向WhatsApp：用watchpoint监视寻找WASignalKeyStore的_registrationIdData值来源
 * 【未解决】iOS逆向WhatsApp：WAFBUUID中的uuid如何初始化设置值的
 * 【整理】iOS逆向调试：lldb用正则查找函数时记得要转义特殊字符
-* 【整理】iOS逆向：Xcode调试时访问类的实例的私有成员属性变量值
 * 【已解决】iOS逆向：lldb中获取ObjC中dict中key的值
 * 【未解决】iOS逆向WhatsApp：-[WARegistrationURLBuilder initWithPhoneNumber:language:locale:fbUUID:waUUID:chatPrivateKey:e2eKeyBundle:smbClientSignedVNameCertData:]
 * 【未解决】iOS逆向WhatsApp：用watchpoint监视寻找WASignalKeyStore的_registrationIdData值来源
@@ -42,4 +41,8 @@
 * 【已解决】iOS逆向：获取iOS的app的主二进制文件路径
 * 【整理】Xcode去Attach挂载调试app或二进制：通过PID或进程名
 * 【整理】iOS调试心得：崩溃日志解析工具
+* 【整理】lldb调试心得：用指针引用ObjC类的私有属性
+* 【整理】iOS逆向：Xcode调试时访问类的实例的私有成员属性变量值
+* 【整理】iOS逆向lldb调试心得：用点.去引用查看ObjC类的属性值
+* 【整理】iOS逆向心得：找逆向关键函数时记得hook研究多个不同目标
 * 

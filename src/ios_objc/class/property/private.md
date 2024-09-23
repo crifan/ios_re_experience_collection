@@ -1,8 +1,27 @@
 # 私有成员属性
 
-## Xcode调试时访问类的实例的私有成员属性变量值
+## ObjC的私有成员属性
 
-对于类`WAPreparedRegistrationURL`：
+iOS的ObjC的私有属性，指的是：
+
+* 大括号`{}`内部的
+  * 属性名往往是以下划线开头的
+* 且外部没有对应的同名的@property的属性
+
+## 举例
+
+### AAURLSession
+
+```objc
+@interface AAURLSession : NSObject <NSURLSessionDataDelegate, NSURLSessionDelegate, NSURLSessionTaskDelegate>
+{
+...
+    NSObject<OS_dispatch_queue> *_sessionQueue;
+...
+}
+```
+
+### `WAPreparedRegistrationURL`
 
 `WhatsApp/headers/WhatsApp_v23.20.79_headers_WhatsApp/WAPreparedRegistrationURL.h`
 
@@ -33,6 +52,10 @@
   * `_params`
   * `_proxyURL`
 
+## 访问私有成员属性的方式
+
+下面以`WAPreparedRegistrationURL`为例，来介绍有多种方式可以查看私有成员属性值：
+
 Xcode调试时，有对应的类的实例：
 
 ```bash
@@ -47,10 +70,12 @@ Xcode调试时，有对应的类的实例：
 
 具体方式：
 
-（1）valueForKey
+### valueForKey
 
 * 语法：`po [objcObj valueForKey: @"_xxx"]`
   * 属性名不带下划线也可以：`po [objcObj valueForKey: @"xxx"]`
+
+* 举例
 
 ```bash
 (lldb) po [0x282170b80 valueForKey: @"_baseURLString"]
@@ -60,13 +85,19 @@ https://v.whatsapp.net/v2/exist
 https://v.whatsapp.net/v2/exist
 ```
 
-（2）指针
-```bash
-(lldb) po ((WAPreparedRegistrationURL*)0x282170b80)->_baseURLString
-https://v.whatsapp.net/v2/exist
-```
+### 指针
 
-（3）偏移量+内存值 == 自己计算指针和内存中的值
+* 语法
+  ```bash
+  po ((ClassName*)instanceAddress)->privatePropertyName
+  ```
+* 举例
+  ```bash
+  (lldb) po ((WAPreparedRegistrationURL*)0x282170b80)->_baseURLString
+  https://v.whatsapp.net/v2/exist
+  ```
+
+#### 偏移量+内存值 == 自己计算指针和内存中的值
 
 ```bash
 (lldb) p/x 0x282170b80 + 0x08
