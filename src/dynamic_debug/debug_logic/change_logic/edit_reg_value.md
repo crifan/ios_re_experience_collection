@@ -106,7 +106,7 @@
 程序的确执行了，另外的分支了：
 
 
-![xcode_change_reg_tbnz](../../../assets/img/xcode_change_reg_tbnz.png)
+![xcode_change_reg_tbnz](../../../assets/img/xcode_change_reg_tbnz.jpg)
 
 可以使得程序运行，暂时走我们要的分支了：
 

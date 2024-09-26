@@ -39,7 +39,7 @@ frida-trace -U -F com.apple.Preferences -O Preferences_accoutLogin_hook.txt
 * `shouldContinueWithAuthenticationResults`
     * `-[AKAppleIDAuthenticationContextManager shouldContinueWithAuthenticationResults:error:forContextID:completion:]`
 
-![vscode_shouldcontinuewithauthenticationresults](../assets/img/vscode_shouldcontinuewithauthenticationresults.png)
+![vscode_shouldcontinuewithauthenticationresults](../assets/img/vscode_shouldcontinuewithauthenticationresults.jpg)
 
 但是最后追踪下去，感觉进入了死胡同：
 

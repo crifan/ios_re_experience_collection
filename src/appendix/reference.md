@@ -45,4 +45,11 @@
 * 【整理】iOS逆向：Xcode调试时访问类的实例的私有成员属性变量值
 * 【整理】iOS逆向lldb调试心得：用点.去引用查看ObjC类的属性值
 * 【整理】iOS逆向心得：找逆向关键函数时记得hook研究多个不同目标
+* 【整理】iOS逆向：从ARM汇编代码反推理解出部分的原始代码逻辑
+* 【已解决】iOS逆向时_os_log_impl的详细的参数和含义
+* 【整理】iOS逆向心得：NSString、os_log等带格式化参数时的参数传递逻辑
+* 【已解决】iOS逆向Apple账号：研究signin/v2/login请求的header头信息
+* 【已解决】旧Mac中重新调试jailAppleAccount插件查看signin/v2/login等网络请求相关数据
+* 【已解决】iOS逆向：hook代码中通过函数打印处函数调用堆栈
+* 【整理】iOS逆向心得：对于iOS内置类比如NSMutableURLRequest的属性和函数的扩展
 * 
