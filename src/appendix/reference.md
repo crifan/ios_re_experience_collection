@@ -52,4 +52,15 @@
 * 【已解决】旧Mac中重新调试jailAppleAccount插件查看signin/v2/login等网络请求相关数据
 * 【已解决】iOS逆向：hook代码中通过函数打印处函数调用堆栈
 * 【整理】iOS逆向心得：对于iOS内置类比如NSMutableURLRequest的属性和函数的扩展
+* 【已解决】iOS逆向：Xcode写hook插件看能否调试触发断点
+* 【已解决】如何才能让Xcode中hook代码断点被触发实时调试插件hook代码
+* 【记录】iOS逆向Apple账号：Xcode实时调试hook代码研究账号登录过程
+* 【已解决】新建和初始化iOSOpenDev的Xcode项目：jailAppleAccount的hook插件
+* 【已解决】换iPhone11去确保Xcode的iOSOpenDev的hook插件正常工作
+* 【整理】Xcode去Attach挂载调试app或二进制：通过PID或进程名
+* 【整理】iOS逆向心得：手动从汇编代码的adrp计算出字符串即objc_msgSend的参数的函数名
+* 【整理】iOS逆向调试心得：从po打印值看出当前变量类型是实例对象还是类本身
+* 【未解决】iOS逆向Apple账号：-[AAUISignInViewController _attemptAuthenticationWithContext:]
+* 【整理】逆向调试心得：给被大量调用的底层函数加hook且加参数过滤会导致app运行很慢甚至卡死
+* 【已解决】iOS逆向Apple账号：通过插件hook去打印AADeviceInfo的类的相关信息
 * 

@@ -16,7 +16,12 @@
               * `-[NSMutableURLRequest addValue:forHTTPHeaderField:]`
               * `-[NSMutableURLRequest setValue:forHTTPHeaderField:]`
               * `-[NSMutableURLRequest setAllHTTPHeaderFields:]`
+              * `-[NSMutableURLRequest setHTTPBody:]`
             * `NSURLRequest`
+              * `+[NSURLRequest requestWithURL:]`
+              * `+[NSURLRequest requestWithURL:cachePolicy:timeoutInterval:]`
+              * `-[NSURLRequest initWithURL:]`
+              * `-[NSURLRequest initWithURL:cachePolicy:timeoutInterval:]`
               * `-[NSURLRequest allHTTPHeaderFields]`
           * response
             * `NSHTTPURLResponse`
@@ -99,6 +104,26 @@ NSURLRequest
 ------------------------------------------------------------------------------*/
 
 %hook NSURLRequest
+
++ (instancetype)requestWithURL:(NSURL *)URL cachePolicy:(NSURLRequestCachePolicy)cachePolicy timeoutInterval:(NSTimeInterval)timeoutInterval{
+    NSLog(@"jailAppleAccount requestWithURL: URL=%@, cachePolicy=%lu, timeoutInterval=%f", URL, (unsigned long)cachePolicy, timeoutInterval);
+    return %orig;
+}
+
++ (instancetype)requestWithURL:(NSURL *)URL{
+    NSLog(@"jailAppleAccount requestWithURL: URL=%@", URL);
+    return %orig;
+}
+
+- (instancetype)initWithURL:(NSURL *)URL{
+    NSLog(@"jailAppleAccount initWithURL: URL=%@", URL);
+    return %orig;
+}
+
+- (instancetype)initWithURL:(NSURL *)URL cachePolicy:(NSURLRequestCachePolicy)cachePolicy timeoutInterval:(NSTimeInterval)timeoutInterval{
+    NSLog(@"jailAppleAccount initWithURL: URL=%@, cachePolicy=%lu, timeoutInterval=%f", URL, (unsigned long)cachePolicy, timeoutInterval);
+    return %orig;
+}
 
 -(NSDictionary*)allHTTPHeaderFields{
    NSDictionary* allHeaderDict = %orig;
