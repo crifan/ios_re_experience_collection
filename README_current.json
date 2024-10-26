@@ -1,6 +1,6 @@
 {
-  "latestVersion": "v1.0.0",
-  "lastUpdate": "20240927",
+  "latestVersion": "v1.1.0",
+  "lastUpdate": "20241026",
   "gitRepoName": "ios_re_experience_collection",
   "bookName": "iOS逆向：心得集锦",
   "bookDescription": "把iOS逆向中的，各种不适合、不方便、不应该放到某个其他独立子教程中的心得，都整理过来，放到此处iOS逆向心得集锦中，方便参考；包括心得概述；iPhone的初始化开发环境和常用目录；app的plist文件、相关文件目录和数据，包括Bundle、Data、Shared AppGroup；二进制文件路径，app的卸载的残留数据；Keychain数据库及字段含义；以及ObjC的运行时，包括objc_msgSend、objc_alloc；Class类的打印类的描述详情信息、成员属性包括公开和私有的和扩展属性；以及类和实例的对比；以及属性值，如何获取变量的值，包括dict字典；计算类的属性值；Xcode和Frida属性值不一样；以及动态调试的调试代码逻辑，寻找函数触发时机；alloc和init和new；重装和spawn方式；寻找变量改动时机；wivar；改变运行逻辑的修改寄存器值、hook函数返回值；Xcode调试包括Attach调试、函数调用堆栈，函数名不一致；查看当前所有变量值；Fetching Variables on iPhone；汇编代码窗口保持打开状态；2个调试目标arm64和arm64e；xm文件无法定位到源代码位置；实时调试hook代码；和LLDB的正则搜索；iOSOpenDev；Mach-O的image base基地址；log日志的超过1K的打印；头文件的试试新旧不同版本；抓包的request和response；tweak插件；crash崩溃的崩溃日志解析工具、从崩溃信息找崩溃所在位置；和通用的：从汇编反推代码逻辑、必要时hook多个目标、特殊的参数传递、hook代码没生效、hook导致很慢和卡死；最后有附录相关资料。"
